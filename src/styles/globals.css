@@ -1,0 +1,37 @@
+:root {
+  --main-color: #01adfe;
+  --main-title-font-size: 40px;
+  --main-sub-font-size: 21px;
+
+  --button-font-size: 19px;
+  --button-height: 55px;
+  --button-width: 185px;
+}
+
+* {
+  letter-spacing: -0.5px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 1000px white inset;
+	box-shadow: 0 0 0 1000px white inset;
+}
+
+button {
+  cursor: pointer;
+}
+
+.gmarket {
+  font-family: 'GmarketSansMedium', sans-serif;
+}
+
+.ReactModalPortal {
+  position: relative;
+  z-index: 10000;
+}

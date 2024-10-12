@@ -1,0 +1,312 @@
+.admin {
+  min-height: 100vh;
+  display: flex;
+}
+
+.admin h1.main-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 43px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #878787;
+}
+
+.admin > nav {
+  width: 250px;
+  background: #364153;
+}
+
+.admin > nav + div {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.admin > nav .logo {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--main-color);
+}
+
+.admin li.main-nav {
+    overflow: hidden;
+}
+
+.admin > nav .main-nav > span {
+  height: 60px;
+  padding-inline: 30px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+  border-bottom: 1px solid #222d3f;
+  position: relative;
+}
+
+.admin > nav .main-nav > span:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(/images/admin/customer/down_icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 10px;
+}
+
+.admin > nav .main-nav.on > span:after {
+  transform: rotate(-180deg);
+}
+
+.admin > nav .main-nav > span i {
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 4px;
+}
+
+.admin > nav .main-nav:nth-child(1) i {
+  background-image: url(/images/admin/customer/cs_icon_off.png);
+}
+
+.admin > nav .main-nav:nth-child(2) i {
+  background-image: url(/images/admin/customer/statistics_icon.png);
+}
+
+.admin > nav .main-nav ul {
+  display: flex;
+  flex-direction: column;
+  background: #202b3d;
+  height: auto;
+  max-height: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+}
+
+.admin > nav .main-nav.on ul {
+  max-height: 100vh;
+}
+
+.admin > nav .main-nav ul a {
+  width: 100%;
+  display: block;
+  padding: 0 44px;
+  text-decoration: none;
+  color: #848d9e;
+  position: relative;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.admin > nav .main-nav ul li {
+  padding: 20px 0;
+}
+
+.admin > nav .main-nav ul li.active a {
+  color: var(--main-color);
+}
+
+.admin > nav .main-nav ul li.active a:before {
+  background: var(--main-color);
+}
+
+.admin > nav .main-nav ul a:before {
+  content: '';
+  position: absolute;
+  background: #848d9e;
+  display: block;
+  width: 8px;
+  height: 8px;
+  left: 28px;
+  top: 50%;
+  transform: translateY(calc(-50% + 1px));
+}
+
+.admin header {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 45px;
+  border-bottom: 1px solid #d6d6d6;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.admin header > div:first-child {
+  font-size: 15px;
+}
+
+.admin header > div:first-child strong {
+  font-weight: 500;
+}
+
+.admin header > div:last-child {
+  display: flex;
+  height: 100%;
+}
+
+.admin header > div a {
+  width: 65px;
+  background: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d6d6d6;
+  box-sizing: border-box;
+}
+
+.admin header > div button {
+  width: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: transparent;
+}
+
+.admin main {
+    width: 100%;
+    padding: 40px;
+    flex: 1;
+    box-sizing: border-box;
+    height: calc(100% - 65px);
+}
+
+.admin table {
+    width: 100%;
+    border-radius: 10px;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px #d3d1d2;
+}
+
+.admin table thead {
+    background: var(--main-color);
+    height: 50px;
+}
+
+.admin table thead th {
+    vertical-align: middle;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.admin table td {
+    color: #878787
+}
+
+.admin table .empty td {
+    height: 500px;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    line-height: 500px;
+}
+
+.admin table tbody tr {
+    height: 53px;
+    line-height: 53px;
+}
+
+.admin table tbody tr.empty {
+    height: 500px;
+}
+
+.admin table tbody tr td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.admin table tbody tr:not(:last-child) {
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pagination > div {
+  display: flex;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.pagination > div > div {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: #222;
+  cursor: pointer;
+}
+
+.pagination > div > div.active {
+  background: var(--main-color);
+  color: #fff;
+}
+
+.pagination .double {
+  display: none;
+}
+
+.pagination .arrow {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.left-item {
+  background-image: url(/images/icon/arrow_icon.png);
+  transform: rotate(-180deg);
+}
+
+.right-item {
+  background-image: url(/images/icon/arrow_icon.png);
+}
+
+.grid-view {
+  border-top: 1px solid #878787;
+  width: 100%;
+}
+
+.grid-view > div {
+  display: flex;
+}
+
+.grid-view > div {
+  border-bottom: 1px solid #cccccc;
+}
+
+.grid-view label {
+  width: 200px;
+  min-height: 50px;
+  display: flex;
+  background: #f2f2f2;
+  padding-left: 23px;
+  box-sizing: border-box;
+  color: #222;
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 17px;
+}
+
+.grid-view label + div {
+  flex: 1;
+  background: #fff;
+  display: flex;
+  padding-inline: 23px;
+  color: #878787;
+  font-size: 15px;
+  padding-block: 17px;
+  word-break: break-all;
+  line-height: 1.4;
+}

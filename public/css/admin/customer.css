@@ -1,0 +1,98 @@
+.admin-customer .detail {
+  width: 83px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: #878787;
+  border: 1px solid #878787;
+  border-radius: 19px;
+  text-decoration: none;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.admin-customer .delete {
+  background-color: transparent;
+  border: none;
+}
+
+.admin-customer .list {
+  width: 135px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 40px;
+}
+
+.admin-estimate h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.grid-view + h2 {
+  margin-top: 40px;
+}
+
+.admin table thead {
+  line-height: 50px;    
+}
+
+.admin-customer tr {
+  display: flex;
+}
+
+.admin-customer tr td,
+.admin-customer tr th {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 100%;
+  text-align: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.admin-customer tr > :nth-child(1) {
+  width: auto;
+}
+
+.admin-customer tr > :nth-child(2) {
+  width: 70px;
+}
+
+.admin-customer tr > :nth-child(3) {
+  width: 150px;
+}
+
+.admin-customer tr > :nth-child(4) {
+  width: 150px;
+}
+
+.admin-customer tr > :nth-child(5) {
+  width: 200px;
+}
+
+.admin-customer tr > :nth-child(6) {
+  width: 230px;
+}
+
+.admin-customer tr > :nth-child(7) {
+  flex: 1;
+}
+
+.admin-customer tr > :nth-child(8) {
+  width: 150px;
+}
+
+
+.admin-customer tr > :nth-child(9) {
+  width: 80px;
+}
